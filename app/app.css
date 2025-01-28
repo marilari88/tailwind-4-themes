@@ -1,13 +1,29 @@
 @import "tailwindcss";
 
+@import "./palette.css" layer(base);
+@import "./theme-b.css" layer(base);
+
 @theme {
   --color-*: initial;
   --spacing-*: initial;
   --rounded-*: initial;
 
-  --color-text-primary: var(--color-text-primary);
-  --color-text-neutral: var(--color-text-neutral);
-  --color-background: var(--color-background);
+  --color-utility-red-500: rgb(239 68 68);
+  --color-utility-red-600: rgb(220 38 38);
+  --color-utility-red-700: rgb(185 28 28);
+  --color-utility-red-800: rgb(153 27 27);
+  --color-utility-red-900: rgb(127 29 29);
+
+  --color-utility-orange-500: rgb(255 90 31);
+  --color-utility-orange-600: rgb(253 75 31);
+  --color-utility-orange-700: rgb(250 60 31);
+  --color-utility-orange-800: rgb(244 51 31);
+  --color-utility-orange-900: rgb(234 45 31);
+
+  --color-utility-yellow-500: rgb(254 215 95);
+  --color-utility-yellow-600: rgb(253 191 36);
+  --color-utility-yellow-700: rgb(250 160 0);
+  --color-utility-yellow-800: rgb(244 129 0);
 
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -48,5 +64,9 @@
   --rounded-full: 9999px;
 }
 
-@import "./palette.css" layer(base);
-@import "./theme-a.css" layer(base);
+@theme inline {
+  --text-color-primary: var(--color-text-primary);
+  --text-color-neutral: var(--color-text-neutral);
+  --background-color-default: var(--color-background);
+}
+

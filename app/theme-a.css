@@ -2,7 +2,7 @@
 [data-theme="dark"] .inverted {
   --color-text-primary: var(--blue-600);
   --color-text-neutral: var(--neutral-1000);
-  --color-background: var(--neutral-100);
+  --color-background: var(--neutral-300);
 }
 
 
